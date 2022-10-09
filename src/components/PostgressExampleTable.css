@@ -1,0 +1,11 @@
+#tableSQL {
+  top: 1rem;
+  margin-left: auto;
+  margin-right: 2rem;
+  position: sticky;
+  color: var(--grey1);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--grey1);
+  height: fit-content;
+}

@@ -1,0 +1,48 @@
+.indicatorPstGrs {
+  position: absolute;
+  left: 1rem;
+}
+.PstgrsTheme,
+.PstgrsThemeOpen {
+  margin-right: 4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 0.2rem solid var(--whiteTr20);
+}
+.PstgrsThemeOpen {
+  background-color: var(--whiteTr10);
+}
+.PstgrsTheme > .howTo,
+.PstgrsTheme > .output {
+  display: none;
+}
+.PstgrsThemeOpen > * {
+  color: var(--grey1);
+  font-weight: 600;
+}
+.PstGrsTitle {
+  user-select: none;
+  color: black;
+  background: rgb(215, 215, 215);
+  font-weight: 1000;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.indicatorPstGrs {
+  background: black;
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+#pstgrimgcontainter {
+  display: flex;
+  justify-content: flex-start;
+}
+#pstgrsico {
+  filter: saturate(0);
+  height: 4rem;
+}

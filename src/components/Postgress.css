@@ -1,0 +1,21 @@
+#PostgressPage {
+  background: var(--backgroundblack);
+}
+
+#pstgrsico {
+  filter: saturate(0);
+  height: 4rem;
+  display: block;
+}
+#postgressKeywords {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+#contentPstGrs {
+  display: flex;
+}
