@@ -9,10 +9,19 @@
   overflow: hidden;
   border: 0.2rem solid var(--whiteTr20);
 }
+.PstgrsTheme > .PstGrsTitle:hover {
+  background: rgb(148, 148, 148);
+}
+.PstgrsThemeOpen > .PstGrsTitle {
+  background: rgb(169, 169, 169);
+}
 .PstgrsThemeOpen {
   background-color: var(--whiteTr10);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .PstgrsTheme > .howTo,
+.PstgrsTheme > .example,
 .PstgrsTheme > .output {
   display: none;
 }
@@ -23,7 +32,7 @@
 .PstGrsTitle {
   user-select: none;
   color: black;
-  background: rgb(215, 215, 215);
+  background: rgb(86, 86, 86);
   font-weight: 1000;
   font-size: 2rem;
   cursor: pointer;
@@ -45,4 +54,7 @@
 #pstgrsico {
   filter: saturate(0);
   height: 4rem;
+}
+.yellow {
+  color: orange;
 }

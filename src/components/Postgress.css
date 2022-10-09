@@ -6,6 +6,10 @@
   filter: saturate(0);
   height: 4rem;
   display: block;
+  opacity: 0.75;
+}
+#pstgrsico:hover {
+  filter: brightness(1.1);
 }
 #postgressKeywords {
   width: 90%;

@@ -2,7 +2,7 @@ import React from "react";
 import "./PostgressCard.css";
 interface PostgressCardProps {
   title: string;
-  description: string;
+  description: JSX.Element;
   example: string;
   result: string;
 }
@@ -24,6 +24,7 @@ function PostgressCard(props: PostgressCardProps) {
         <span className="cardTitlePstGrs">{props.title}</span>
       </div>
       <div className="howTo">{props.description}</div>
+      <div className="example">{props.example}</div>
       <div className="output">{props.result}</div>
     </div>
   );

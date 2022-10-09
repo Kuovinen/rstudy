@@ -1,67 +1,75 @@
+/*
+<span className='yellow'>data</span>
+*/
+<span className="yellow"></span>;
 const arr = [
   {
     title: "SELECT",
-    description: "extracts data from a database",
+    description: (
+      <span>
+        extracts<span className="yellow"> data </span>from a database
+      </span>
+    ),
     example: "string",
     result: "result",
   },
   {
     title: "UPDATE",
-    description: "updates data in a database",
+    description: <span>updates data in a database</span>,
     example: "string",
     result: "result",
   },
   {
     title: "DELETE",
-    description: "deletes data from a database",
+    description: <span>deletes data from a database</span>,
     example: "string",
     result: "result",
   },
   {
     title: "INSERT INTO",
-    description: "inserts new data into a database",
+    description: <span>inserts new data into a database</span>,
     example: "string",
     result: "result",
   },
   {
     title: "CREATE DATABASE",
-    description: "creates a new database",
+    description: <span>creates a new database</span>,
     example: "string",
     result: "result",
   },
   {
     title: "ALTER DATABASE",
-    description: "modifies a database",
+    description: <span>modifies a database</span>,
     example: "string",
     result: "result",
   },
   {
     title: "CREATE TABLE",
-    description: "modifies a new table",
+    description: <span>modifies a new table</span>,
     example: "string",
     result: "result",
   },
   {
     title: "ALTER TABLE",
-    description: "modifies a able",
+    description: <span>modifies a able</span>,
     example: "string",
     result: "result",
   },
   {
     title: "DROP TABLE",
-    description: "deletes a table",
+    description: <span>deletes a table</span>,
     example: "string",
     result: "result",
   },
   {
     title: "CREATE INDEX",
-    description: "creates an index (search key)",
+    description: <span>creates an index (search key)</span>,
     example: "string",
     result: "result",
   },
   {
     title: "DROP INDEX",
-    description: "deletes an index",
+    description: <span>deletes an index</span>,
     example: "string",
     result: "result",
   },

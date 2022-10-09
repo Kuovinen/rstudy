@@ -6,7 +6,7 @@ import PostgressExampleTable from "./PostgressExampleTable";
 import SQLdata from "./sqlData";
 interface SQLdataObj {
   title: string;
-  description: string;
+  description: JSX.Element;
   example: string;
   result: string;
 }

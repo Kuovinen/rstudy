@@ -1,11 +1,29 @@
-#tableSQL {
+#sqlTables {
+  flex: 1;
+  margin: 0 2rem;
+}
+
+.tableSQL {
+  width: 100%;
   top: 1rem;
-  margin-left: auto;
-  margin-right: 2rem;
   position: sticky;
   color: var(--grey1);
   padding: 1rem;
   border-radius: 0.5rem;
   border: 0.2rem solid var(--grey1);
   height: fit-content;
+}
+
+tr:hover {
+  background: var(--whiteTr10);
+}
+td:hover,
+th:hover {
+  background: var(--whiteTr20);
+}
+#table0,
+#table1,
+#table2 {
+  font-weight: 1000;
+  color: var(--grey1);
 }
