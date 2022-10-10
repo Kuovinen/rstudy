@@ -3,8 +3,8 @@ import "./PostgressCard.css";
 interface PostgressCardProps {
   title: string;
   description: JSX.Element;
-  example: string;
-  result: string;
+  example: JSX.Element;
+  result: JSX.Element;
 }
 
 function PostgressCard(props: PostgressCardProps) {

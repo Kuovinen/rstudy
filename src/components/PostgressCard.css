@@ -2,6 +2,7 @@
   position: absolute;
   left: 1rem;
 }
+
 .PstgrsTheme,
 .PstgrsThemeOpen {
   margin-right: 4rem;
@@ -16,7 +17,6 @@
   background: rgb(169, 169, 169);
 }
 .PstgrsThemeOpen {
-  background-color: var(--whiteTr10);
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -25,6 +25,21 @@
 .PstgrsTheme > .output {
   display: none;
 }
+.howTo,
+.output {
+  background-color: var(--whiteTr10);
+  text-align: left;
+}
+.example {
+  text-align: left;
+  margin: 0.5rem 0;
+}
+.howTo,
+.output,
+.example {
+  padding-left: 0.5rem;
+}
+
 .PstgrsThemeOpen > * {
   color: var(--grey1);
   font-weight: 600;
@@ -55,6 +70,15 @@
   filter: saturate(0);
   height: 4rem;
 }
-.yellow {
-  color: orange;
+.yellow2 {
+  color: rgb(206, 147, 38);
+}
+.yellow1 {
+  color: rgb(142, 107, 42);
+}
+.green2 {
+  color: rgb(38, 158, 92);
+}
+.green1 {
+  color: rgb(42, 65, 52);
 }
