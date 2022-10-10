@@ -2,16 +2,16 @@ import "./PostgressExampleTable.css";
 function PostgressExampleTable() {
   return (
     <div id="sqlTables">
-      <span id="table0">TOP</span>
+      <span id="table0">hq</span>
       <table className="tableSQL">
         <tr>
-          <th>ID</th>
-          <th>FirstName</th>
-          <th>LastName</th>
-          <th>Title</th>
-          <th>BirthYear</th>
-          <th>Manager</th>
-          <th>Department</th>
+          <th>id</th>
+          <th>firstName</th>
+          <th>lastName</th>
+          <th>title</th>
+          <th>birthYear</th>
+          <th>manager</th>
+          <th>department</th>
         </tr>
         <tr>
           <td>000A</td>
@@ -32,16 +32,16 @@ function PostgressExampleTable() {
           <td>Management</td>
         </tr>
       </table>
-      <span id="table1">SCRANTON</span>
+      <span id="table1">scranton</span>
       <table className="tableSQL">
         <tr>
-          <th>ID</th>
-          <th>FirstName</th>
-          <th>LastName</th>
-          <th>Title</th>
-          <th>BirthYear</th>
-          <th>Manager</th>
-          <th>Department</th>
+          <th>id</th>
+          <th>firstName</th>
+          <th>lastName</th>
+          <th>title</th>
+          <th>birthYear</th>
+          <th>manager</th>
+          <th>department</th>
         </tr>
         <tr>
           <td>0001</td>
@@ -107,16 +107,16 @@ function PostgressExampleTable() {
           <td>Management</td>
         </tr>
       </table>
-      <span id="table2">STAMFORD</span>
+      <span id="table2">stamford</span>
       <table className="tableSQL">
         <tr>
-          <th>ID</th>
-          <th>FirstName</th>
-          <th>LastName</th>
-          <th>Title</th>
-          <th>BirthYear</th>
-          <th>Manager</th>
-          <th>Department</th>
+          <th>id</th>
+          <th>firstName</th>
+          <th>lastName</th>
+          <th>title</th>
+          <th>birthYear</th>
+          <th>manager</th>
+          <th>department</th>
         </tr>
         <tr>
           <td>0001</td>
