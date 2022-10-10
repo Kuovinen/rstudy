@@ -7,8 +7,8 @@ import SQLdata from "./sqlData";
 interface SQLdataObj {
   title: string;
   description: JSX.Element;
-  example: string;
-  result: string;
+  example: JSX.Element;
+  result: JSX.Element;
 }
 function Postgress() {
   return (
