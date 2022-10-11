@@ -1,12 +1,16 @@
 #sqlTables {
   flex: 1;
   margin: 0 2rem;
+  position: relative;
+  display: block;
 }
-
-.tableSQL {
-  width: 100%;
+.tables {
   top: 1rem;
   position: sticky;
+}
+.tableSQL {
+  width: 100%;
+
   color: var(--grey1);
   padding: 1rem;
   border-radius: 0.5rem;
