@@ -47,6 +47,43 @@ const arr = [
     ),
   },
   {
+    title: "--JOIN",
+    description: (
+      <span>
+        query keyword to get data from multiple tables at once using their
+        common field
+      </span>
+    ),
+    example: (
+      <span>
+        <span className="yellow2">SELECT</span> *{" "}
+        <span className="yellow2">FROM</span> scranton{" "}
+        <span className="green2">JOIN</span> hq{" "}
+        <span className="yellow2">ON</span> hq.id==scranton.manager;
+      </span>
+    ),
+    result: (
+      <div>
+        RESULT: Assuming the manager field of scranton is referencing hq id's
+        only Michales boss is in hq
+        <div>
+          {" "}
+          <table className="tableSQL" style={{ border: "none" }}>
+            <tr>
+              <td>0001</td>
+              <td>Michael </td>
+              <td>Scott</td>
+              <td>Reg.Manager</td>
+              <td>1962</td>
+              <td>0000</td>
+              <td>Management</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    ),
+  },
+  {
     title: "--CONSTRAINT",
     description: <span>defines rules for data in a table</span>,
     example: (
