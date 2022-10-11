@@ -47,6 +47,43 @@ const arr = [
     ),
   },
   {
+    title: "--CONSTRAINT",
+    description: <span>defines rules for data in a table</span>,
+    example: (
+      <span>
+        <span className="yellow2">CREATE TABLE</span> post (id{" "}
+        <span className="yellow2">SERIAL PRIMARY KEY</span>, name{" "}
+        <span className="yellow2">VARCHAR(255)</span>, content{" "}
+        <span className="yellow2">TEXT</span>, user_id{" "}
+        <span className="yellow2">INT</span>,{" "}
+        <span className="green2">CONSTRAINT</span> fk_user{" "}
+        <span className="yellow2">FOREIGN KEY</span>(user_id)
+        <span className="yellow2"> REFERENCES</span> "user"(id));
+        <span className="green2">
+          --CONSTRAINT declares a rule FOREIGN KEY defines which column in
+          concerns and then REFERENCES defines relationship
+        </span>
+      </span>
+    ),
+    result: (
+      <div>
+        <span>
+          RESULT: Creates a table with the row user_id referencing id's from the
+          table named user
+        </span>{" "}
+        <div>post</div>{" "}
+        <table className="tableSQL">
+          <tr>
+            <th>id</th>
+            <th>name </th>
+            <th>content </th>
+            <th>user_id </th>
+          </tr>{" "}
+        </table>
+      </div>
+    ),
+  },
+  {
     title: "--WHERE",
     description: <span>sets conditions for queries</span>,
     example: (
@@ -210,7 +247,7 @@ const arr = [
   },
   {
     title: "ALTER TABLE",
-    description: <span>modifies a table</span>,
+    description: <span>modifies a able</span>,
     example: <span>data</span>,
     result: <span className="green">RESULT</span>,
   },
