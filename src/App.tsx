@@ -2,11 +2,13 @@ import React from "react";
 import "./App.css";
 import Postgress from "./components/sql/Postgress";
 import JSFunctions from "./components/JSFunctions/JSFunctions";
+import MongoCommands from "./components/mongoDB/MongoCommands";
 function App() {
   const [theme, setTheme] = React.useState("sql");
   const arrayOfTopics = [
     { name: "sql", content: <Postgress /> },
     { name: "js", content: <JSFunctions /> },
+    { name: "mongo", content: <MongoCommands /> },
   ];
 
   const content = arrayOfTopics.reduce((prev, current) => {
