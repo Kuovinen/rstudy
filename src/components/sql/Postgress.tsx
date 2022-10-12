@@ -1,5 +1,5 @@
 import React from "react";
-import SQLicon from "../pgsql.svg";
+import SQLicon from "../../pgsql.svg";
 import "./Postgress.css";
 import PostgressCard from "./PostgressCard";
 import PostgressExampleTable from "./PostgressExampleTable";
