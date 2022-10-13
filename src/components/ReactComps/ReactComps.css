@@ -1,0 +1,24 @@
+#JSFunctions {
+  margin-top: 3rem;
+  background: var(--backgroundblack);
+}
+#jsico {
+  margin: 2rem;
+  filter: saturate(0);
+  height: 4rem;
+  display: block;
+  opacity: 0.75;
+}
+#jsico:hover {
+  filter: brightness(1.1);
+}
+.jsFunctionsContainer {
+  width: 90%;
+
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
