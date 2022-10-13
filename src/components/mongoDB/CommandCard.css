@@ -1,0 +1,28 @@
+.mongCard,
+.mongCardOpen {
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--whiteTr20);
+  overflow: hidden;
+}
+.mongCard > .title:hover {
+  background: rgb(148, 148, 148);
+}
+.mongCardOpen > .title {
+  background: rgb(169, 169, 169);
+}
+.mongCardOpen {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.title {
+  font-weight: 1000;
+  font-size: 2rem;
+  background: rgb(86, 86, 86);
+}
+
+.mongCard > .description {
+  display: none;
+}
+.description {
+  color: var(--grey1);
+}
