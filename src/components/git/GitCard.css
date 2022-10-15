@@ -1,0 +1,50 @@
+.gitCard,
+.gitCardOpen {
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--whiteTr20);
+  overflow: hidden;
+}
+.gitCard > .title:hover {
+  background: rgb(148, 148, 148);
+}
+.gitCardOpen > .title {
+  background: rgb(169, 169, 169);
+}
+.gitCardOpen {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.title {
+  text-align: left;
+  font-weight: 1000;
+  font-size: 2rem;
+  background: rgb(86, 86, 86);
+}
+.gitCard > .form,
+.gitCard > .comment,
+.gitCard > .returns,
+.gitCard > .example,
+.gitCard > .exampleReturns {
+  display: none;
+}
+.form,
+.returns {
+  color: var(--grey0);
+}
+.comment {
+  background: var(--grey0);
+}
+.example,
+.exampleReturns {
+  margin: 0rem;
+  background: var(--whiteTr20);
+}
+
+.form,
+.comment,
+.returns,
+.example,
+.exampleReturns {
+  text-align: left;
+  padding-left: 1rem;
+}
