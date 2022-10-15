@@ -8,6 +8,8 @@
   height: 4rem;
   display: block;
   opacity: 0.75;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 #jsico:hover {
   filter: brightness(1.1);
