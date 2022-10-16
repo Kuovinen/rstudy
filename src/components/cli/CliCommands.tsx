@@ -1,18 +1,18 @@
 import React from "react";
-import GitIcon from "../../git.svg";
+import CliIcon from "../../ubuntu.svg";
 import "./CliCommands.css";
 import data from "./data";
-import GitCard from "./CliCard";
-function GitCommands() {
+import CliCard from "./CliCard";
+function CliCommands() {
   return (
     <div id="cliCommands">
-      <img src={GitIcon} alt="cliIcon" id="cliIco" />
+      <img src={CliIcon} alt="cliIcon" id="cliIco" />
       <div className="cliCommandsContainer">
         {data.map((element) => {
-          return <GitCard name={element.name} comment={element.comment} />;
+          return <CliCard name={element.name} comment={element.comment} />;
         })}
       </div>
     </div>
   );
 }
-export default GitCommands;
+export default CliCommands;

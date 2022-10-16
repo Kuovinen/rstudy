@@ -1,16 +1,16 @@
-.gitCard,
-.gitCardOpen {
+.cliCard,
+.cliCardOpen {
   border-radius: 0.5rem;
   border: 0.2rem solid var(--whiteTr20);
   overflow: hidden;
 }
-.gitCard > .title:hover {
+.cliCard > .title:hover {
   background: rgb(148, 148, 148);
 }
-.gitCardOpen > .title {
+.cliCardOpen > .title {
   background: rgb(169, 169, 169);
 }
-.gitCardOpen {
+.cliCardOpen {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
@@ -20,11 +20,11 @@
   font-size: 2rem;
   background: rgb(86, 86, 86);
 }
-.gitCard > .form,
-.gitCard > .comment,
-.gitCard > .returns,
-.gitCard > .example,
-.gitCard > .exampleReturns {
+.cliCard > .form,
+.cliCard > .comment,
+.cliCard > .returns,
+.cliCard > .example,
+.cliCard > .exampleReturns {
   display: none;
 }
 .form,

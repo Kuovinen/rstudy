@@ -1,21 +1,21 @@
 import React from "react";
-import "./GitCard.css";
+import "./CliCard.css";
 interface props {
   name: string;
 
   comment: string;
 }
 
-function GitCard(props: props) {
+function CliCard(props: props) {
   const theTab = React.useRef<HTMLDivElement>(null);
   function expand() {
     if (theTab && theTab.current) {
       theTab.current.className =
-        theTab.current.className == "gitCard" ? "gitCardOpen" : "gitCard";
+        theTab.current.className == "cliCard" ? "cliCardOpen" : "cliCard";
     }
   }
   return (
-    <div className="gitCard" ref={theTab}>
+    <div className="cliCard" ref={theTab}>
       <div className="title" onClick={expand}>
         {props.name}
       </div>
@@ -24,4 +24,4 @@ function GitCard(props: props) {
     </div>
   );
 }
-export default GitCard;
+export default CliCard;

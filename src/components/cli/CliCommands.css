@@ -1,18 +1,18 @@
-#gitCommands {
+#cliCommands {
   margin-top: 3rem;
   background: var(--backgroundblack);
 }
-#gitIco {
+#cliIco {
   margin: 2rem;
   filter: saturate(0);
   height: 4rem;
   display: block;
   opacity: 0.75;
 }
-#gitIco:hover {
+#cliIco:hover {
   filter: brightness(1.1);
 }
-.gitCommandsContainer {
+.cliCommandsContainer {
   width: 90%;
 
   margin-left: 5%;
