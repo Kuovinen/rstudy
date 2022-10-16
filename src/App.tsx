@@ -5,6 +5,7 @@ import JSFunctions from "./components/jsfunctions/JSFunctions";
 import MongoCommands from "./components/mongoDB/MongoCommands";
 import ReactComps from "./components/reactComps/ReactComps";
 import GitCommands from "./components/git/GitCommands";
+import CliCommands from "./components/cli/CliCommands";
 function App() {
   const [theme, setTheme] = React.useState("sql");
   const arrayOfTopics = [
@@ -13,6 +14,7 @@ function App() {
     { name: "mongo", content: <MongoCommands /> },
     { name: "react", content: <ReactComps /> },
     { name: "git", content: <GitCommands /> },
+    { name: "cli", content: <GitCommands /> },
   ];
 
   const content = arrayOfTopics.reduce((prev, current) => {
@@ -31,6 +33,7 @@ function App() {
         <div onClick={() => setTheme("js")}>JavaScript</div>
         <div onClick={() => setTheme("react")}>React</div>
         <div onClick={() => setTheme("git")}>Git</div>
+        <div onClick={() => setTheme("cli")}>CLI</div>
       </menu>{" "}
       {content}
     </div>
