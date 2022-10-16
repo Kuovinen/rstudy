@@ -14,7 +14,7 @@ function App() {
     { name: "mongo", content: <MongoCommands /> },
     { name: "react", content: <ReactComps /> },
     { name: "git", content: <GitCommands /> },
-    { name: "cli", content: <GitCommands /> },
+    { name: "cli", content: <CliCommands /> },
   ];
 
   const content = arrayOfTopics.reduce((prev, current) => {
