@@ -299,10 +299,32 @@ const arr = [
     result: <span>RESULT: scranton table is gone</span>,
   },
   {
-    title: "CREATE INDEX",
-    description: <span>creates an index (search key)</span>,
-    example: <span>data</span>,
-    result: <span className="green">scranton table is deleted.</span>,
+    title: "--\\l",
+    description: <span>list all</span>,
+    example: (
+      <span>
+        <span className="yellow2">\l</span> ;
+      </span>
+    ),
+    result: <span>RESULT: displays all databases</span>,
+  },
+  {
+    title: "\\c databaseName",
+    description: <span>connect to specific database</span>,
+    example: <span><span className="yellow2">\c</span> hq</span>,
+    result: <span >Connects to hq database</span>,
+  },
+  {
+    title: "\\! cls     or   \\! clear ",
+    description: <span>clear terminal, cls form windows and clear for linux</span>,
+    example: <span><span className="yellow2">\\! clear</span></span>,
+    result: <span >Empty terminal</span>,
+  },
+  {
+    title: "\\dt ",
+    description: <span>display tables in current database</span>,
+    example: <span><span className="yellow2">\\dt</span></span>,
+    result: <span >Shows hq, scranton and stamford as a list of tables</span>,
   },
   {
     title: "DROP INDEX",
