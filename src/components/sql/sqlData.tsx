@@ -333,6 +333,12 @@ const arr = [
     result: <span >Start PostgreSQL server</span>,
   },
   {
+    title: "\\psql ",
+    description: <span>Enters the PostgreSQL Console</span>,
+    example: <span><span className="yellow2">\\psql</span></span>,
+    result: <span >After entering this console, you can instantly start working with databases by executing different queries of your choice in this console.</span>,
+  },
+  {
     title: "DROP INDEX",
     description: <span>deletes an index</span>,
     example: <span>data</span>,
