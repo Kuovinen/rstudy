@@ -327,6 +327,12 @@ const arr = [
     result: <span >Shows hq, scranton and stamford as a list of tables</span>,
   },
   {
+    title: "\\sudo –i –u postgres ",
+    description: <span>start postgres on linux</span>,
+    example: <span><span className="yellow2">\\sudo –i –u postgres</span></span>,
+    result: <span >Start PostgreSQL server</span>,
+  },
+  {
     title: "DROP INDEX",
     description: <span>deletes an index</span>,
     example: <span>data</span>,
