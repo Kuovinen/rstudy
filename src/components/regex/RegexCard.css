@@ -10,10 +10,10 @@
   overflow: hidden;
   border: 0.2rem solid var(--whiteTr20);
 }
-.PstgrsTheme > .PstGrsTitle:hover {
+.PstgrsTheme > .regExTitle:hover {
   background: rgb(148, 148, 148);
 }
-.PstgrsThemeOpen > .PstGrsTitle {
+.PstgrsThemeOpen > .regExTitle {
   background: rgb(169, 169, 169);
 }
 .PstgrsThemeOpen {
@@ -54,7 +54,7 @@
   color: var(--grey1);
   font-weight: 600;
 }
-.PstGrsTitle {
+.regExTitle {
   user-select: none;
   color: black;
   background: rgb(86, 86, 86);
@@ -65,6 +65,16 @@
   align-items: center;
   justify-content: center;
   position: relative;
+
+}
+.regExTitle:before {
+  content: '/';
+
+  opacity: 0.2;
+}
+.regExTitle:after {
+  content: '/g';
+  opacity: 0.2;
 }
 .indicatorPstGrs {
   background: black;

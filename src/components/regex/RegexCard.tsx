@@ -19,14 +19,13 @@ function PostgressCard(props: PostgressCardProps) {
     }
   }
   return (
-    <div className="PstgrsTheme" ref={theTab}>
-      <div className="PstGrsTitle" onClick={expand}>
+    <div className="PstgrsTheme" ref={theTab} onMouseEnter={()=>props.setRegExInputState(props.example)}>
+      <div className="regExTitle" onClick={expand} >
         <div className="indicatorPstGrs"></div>
         <span className="cardTitlePstGrs">{props.title}</span>
       </div>
       <div className="howTo">{props.description}</div>
       
-      <div className="example" onMouseEnter={()=>props.setRegExInputState(props.example)}> <span className='regForm'>{props.example}</span></div>
     </div>
   );
 }

@@ -17,7 +17,6 @@ function RegExText(props:RegExTextProps) {
   React.useEffect(()=>regexIt());
   return (
     <div id="regExText">
-      <button onClick={regexIt}>CLICK</button>
       <div dangerouslySetInnerHTML={{__html: loremElement}} />
     </div>
   );
