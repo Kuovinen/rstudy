@@ -5,15 +5,18 @@ function PostgressExampleTable() {
       <div className="tables">
         <span id="table0">hq</span>
         <table className="tableSQL">
-          <tr>
-            <th>id</th>
-            <th>firstName</th>
-            <th>lastName</th>
-            <th>title</th>
-            <th>birthYear</th>
-            <th>manager</th>
-            <th>department</th>
-          </tr>
+          <thead>         
+            <tr>
+              <th>id</th>
+              <th>firstName</th>
+              <th>lastName</th>
+              <th>title</th>
+              <th>birthYear</th>
+              <th>manager</th>
+              <th>department</th>
+            </tr>
+          </thead>
+          <tbody>
           <tr>
             <td>000A</td>
             <td>David</td>
@@ -32,18 +35,22 @@ function PostgressExampleTable() {
             <td>000A</td>
             <td>Management</td>
           </tr>
+          </tbody>
         </table>
         <span id="table1">scranton</span>
         <table className="tableSQL">
-          <tr>
-            <th>id</th>
-            <th>firstName</th>
-            <th>lastName</th>
-            <th>title</th>
-            <th>birthYear</th>
-            <th>manager</th>
-            <th>department</th>
-          </tr>
+        <thead>         
+            <tr>
+              <th>id</th>
+              <th>firstName</th>
+              <th>lastName</th>
+              <th>title</th>
+              <th>birthYear</th>
+              <th>manager</th>
+              <th>department</th>
+            </tr>
+          </thead>
+          <tbody>
           <tr>
             <td>0001</td>
             <td>Michael </td>
@@ -107,18 +114,22 @@ function PostgressExampleTable() {
             <td>0001</td>
             <td>Management</td>
           </tr>
+          </tbody>
         </table>
         <span id="table2">stamford</span>
         <table className="tableSQL">
-          <tr>
-            <th>id</th>
-            <th>firstName</th>
-            <th>lastName</th>
-            <th>title</th>
-            <th>birthYear</th>
-            <th>manager</th>
-            <th>department</th>
-          </tr>
+        <thead>         
+            <tr>
+              <th>id</th>
+              <th>firstName</th>
+              <th>lastName</th>
+              <th>title</th>
+              <th>birthYear</th>
+              <th>manager</th>
+              <th>department</th>
+            </tr>
+          </thead>
+          <tbody>
           <tr>
             <td>0001</td>
             <td>Josh </td>
@@ -164,6 +175,7 @@ function PostgressExampleTable() {
             <td>0001</td>
             <td>Accounting</td>
           </tr>
+          </tbody>
         </table>
       </div>
     </div>
