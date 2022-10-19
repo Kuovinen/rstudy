@@ -1,0 +1,94 @@
+.indicatorPstGrs {
+  position: absolute;
+  left: 1rem;
+}
+
+.PstgrsTheme,
+.PstgrsThemeOpen {
+  margin-right: 4rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 0.2rem solid var(--whiteTr20);
+}
+.PstgrsTheme > .PstGrsTitle:hover {
+  background: rgb(148, 148, 148);
+}
+.PstgrsThemeOpen > .PstGrsTitle {
+  background: rgb(169, 169, 169);
+}
+.PstgrsThemeOpen {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.PstgrsTheme > .howTo,
+.PstgrsTheme > .example,
+.PstgrsTheme > .output {
+  display: none;
+}
+.howTo,
+.output {
+  background-color: var(--whiteTr10);
+  text-align: left;
+}
+.example {
+  text-align: left;
+  margin: 0.5rem 0;
+
+}
+.example:before{
+  content:'/'
+}
+.example:after{
+  content:'/g'
+}
+.regForm{
+  color:orange;
+}
+.howTo,
+.output,
+.example {
+  padding-left: 0.5rem;
+}
+
+.PstgrsThemeOpen > * {
+  color: var(--grey1);
+  font-weight: 600;
+}
+.PstGrsTitle {
+  user-select: none;
+  color: black;
+  background: rgb(86, 86, 86);
+  font-weight: 1000;
+  font-size: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.indicatorPstGrs {
+  background: black;
+  border-radius: 50%;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+#pstgrimgcontainter {
+  display: flex;
+  justify-content: flex-start;
+}
+#pstgrsico {
+  filter: saturate(0);
+  height: 4rem;
+}
+.yellow2 {
+  color: rgb(206, 147, 38);
+}
+.yellow1 {
+  color: rgb(142, 107, 42);
+}
+.green2 {
+  color: rgb(38, 158, 92);
+}
+.green1 {
+  color: rgb(42, 65, 52);
+}
