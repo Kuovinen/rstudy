@@ -1,5 +1,5 @@
-import React from "react";
-import SQLicon from "../../pgsql.svg";
+import React, { useEffect } from "react";
+import SQLicon from "../../regex.svg";
 import "./Regex.css";
 import RegexCard from "./RegexCard";
 import RegExText from "./RegExText";
@@ -11,7 +11,8 @@ interface RegexDataInterface {
 
 }
 function Postgress() {
-  const regExInput=React.useRef('o');
+  const [regExInputState,setRegExInputState]=React.useState('o');
+  React.useEffect(()=>console.log(regExInputState));
   return (
     <div id="PostgressPage">
       <img src={SQLicon} alt="postgressIcon" id="pstgrsico" />
@@ -19,7 +20,8 @@ function Postgress() {
         <div id="postgressKeywords">
           {regexData.map((element: RegexDataInterface) => (
             <RegexCard
-            regExInput={regExInput}
+            regExInput={regExInputState}
+            setRegExInputState={setRegExInputState}
               title={element.title}
               description={element.description}
               example={element.example}
@@ -27,7 +29,7 @@ function Postgress() {
             />
           ))}
         </div>
-        <RegExText regExInput={regExInput}/>
+        <RegExText regExInput={regExInputState}/>
       </div>
     </div>
   );

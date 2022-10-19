@@ -4,7 +4,8 @@ interface PostgressCardProps {
   title: string;
   description: JSX.Element;
   example: string;
-  regExInput:React.MutableRefObject<string>;
+  regExInput:string//React.MutableRefObject<string>;
+  setRegExInputState:React.Dispatch<React.SetStateAction<string>>
 }
 
 function PostgressCard(props: PostgressCardProps) {
@@ -25,7 +26,7 @@ function PostgressCard(props: PostgressCardProps) {
       </div>
       <div className="howTo">{props.description}</div>
       
-      <div className="example" onMouseEnter={()=>props.regExInput.current=props.example}> <span className='regForm'>{props.example}</span></div>
+      <div className="example" onMouseEnter={()=>props.setRegExInputState(props.example)}> <span className='regForm'>{props.example}</span></div>
     </div>
   );
 }

@@ -13,6 +13,15 @@ const arr = [
     ),
     example: 'e',
   },
+  {
+    title: "/s+/g",
+    description: (
+      <span>
+        <span className="yellow"> +  </span>- match one or more of the token (symbol) that is before the plus sign.In this case all s and all multiple s will be matched.
+      </span>
+    ),
+    example: 's+',
+  },
 
 ];
 export default arr;
