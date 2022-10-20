@@ -104,6 +104,56 @@ const arr = [
     example: '\\S',
 
   },
+  {
+    title: "\\w{4}",
+    description: (
+      <span>
+        <span className="yellow2"> {4}  </span>- get any 4 symbols in a row (the split happens on none \w characters).
+      </span>
+    ),
+    example: '\\w{4}',
+
+  },
+  {
+    title: "\\w{4,}",
+    description: (
+      <span>
+        <span className="yellow2"> , </span>- get any 4 symbols OR MORE in a row (the split happens on none \w characters).
+      </span>
+    ),
+    example: '\\w{4,}',
+
+  },
+  {
+    title: "\\w{4,5}",
+    description: (
+      <span>
+        <span className="yellow2"> {'{4,5}'} </span>- get any 4 to 5 symbols in a row (the split happens on none \w characters).
+      </span>
+    ),
+    example: '\\w{4,5}',
+
+  },
+  {
+    title: "[fc]",
+    description: (
+      <span>
+        <span className="yellow2"> [fc] </span>- match any f or c character.
+      </span>
+    ),
+    example: '[fc]',
+
+  },
+  {
+    title: "[a-c]",
+    description: (
+      <span>
+        <span className="yellow2"> [a-c] </span>- match any letter from  a to c.
+      </span>
+    ),
+    example: '[a-c]',
+
+  },
 
 ];
 export default arr;
