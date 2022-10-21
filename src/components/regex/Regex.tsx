@@ -14,7 +14,7 @@ function Postgress() {
   const [regExInputState,setRegExInputState]=React.useState('o');
   React.useEffect(()=>console.log(regExInputState));
   return (
-    <div id="PostgressPage">
+    <div id="RegexPage">
       <img src={SQLicon} alt="postgressIcon" id="pstgrsico" />
       <div id="contentPstGrs">
         <div id="postgressKeywords">
@@ -28,7 +28,7 @@ function Postgress() {
 
             />
           ))}
-        </div>
+        </div><div id="regextextcontainer"></div>
         <RegExText regExInput={regExInputState}/>
       </div>
     </div>

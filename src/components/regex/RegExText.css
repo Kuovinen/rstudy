@@ -2,7 +2,12 @@
   width:50%;
   text-align: left;
   color:var(--grey0);
+
 }
 .yl{
   color:orange;
+}
+#regextextcontainer{
+  top: 1rem;
+  position: sticky;
 }

@@ -1,6 +1,7 @@
-#PostgressPage {
+#RegexPage {
   margin-top: 3rem;
   background: var(--backgroundblack);
+  position: relative;
 }
 
 #pstgrsico {

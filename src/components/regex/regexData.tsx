@@ -154,6 +154,26 @@ const arr = [
     example: '[a-c]',
 
   },
+  {
+    title: "[^a-d]",
+    description: (
+      <span>
+        <span className="yellow2"> [^] </span>- match anything BUT what follows the caret symbol.
+      </span>
+    ),
+    example: '[^a-d]',
+
+  },
+  {
+    title: "^Lo",
+    description: (
+      <span>
+        <span className="yellow2"> [^Lo] </span>- match Lo but only in the beginning of a line.
+      </span>
+    ),
+    example: '^Lo',
+
+  },
 
 ];
 export default arr;
