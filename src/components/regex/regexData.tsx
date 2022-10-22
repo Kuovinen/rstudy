@@ -168,7 +168,7 @@ const arr = [
     title: "^Lo",
     description: (
       <span>
-        <span className="yellow2"> [^Lo] </span>- match Lo but only in the beginning of a line.
+        <span className="yellow2"> [^Lo] </span>- match Lo but only in the beginning of.
       </span>
     ),
     example: '^Lo',

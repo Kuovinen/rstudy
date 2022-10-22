@@ -1,12 +1,12 @@
 import React from "react";
 import "./ReactCard.css";
+
 interface props {
   name: string;
-  form: string;
+  form: JSX.Element;
   comment: string;
-  returns: string;
+  returns: JSX.Element;
 }
-
 function FunctionCard(props: props) {
   const theTab = React.useRef<HTMLDivElement>(null);
   function expand() {
