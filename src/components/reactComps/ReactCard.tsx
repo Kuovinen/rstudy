@@ -4,7 +4,7 @@ import "./ReactCard.css";
 interface props {
   name: string;
   form: JSX.Element;
-  comment: string;
+  comment: JSX.Element;
   returns: JSX.Element;
 }
 function FunctionCard(props: props) {
