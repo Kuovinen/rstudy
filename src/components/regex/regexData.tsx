@@ -168,11 +168,59 @@ const arr = [
     title: "^Lo",
     description: (
       <span>
-        <span className="yellow2"> [^Lo] </span>- match Lo but only in the beginning of.
+        <span className="yellow2"> [^Lo] </span>- caret matches the POSITION of before the first character in a string. In this case match Lo but only in the beginning of the text. With the addition of an /m tag to the /g tag is covers each new line.
       </span>
     ),
     example: '^Lo',
 
+  },
+  {
+    title: "\.$",
+    description: (
+      <span>
+        <span className="yellow2"> $ </span>- dollar matches the POSITION of before the first NEW LINE in a string. Match pediod at the end of the whole statement.With the addition of an /m tag to the /g tag is covers each new line.
+      </span>
+    ),
+    example: '^Lo',
+
+  },
+  {
+    title: "(?<=[tT]he)..",
+    description: (
+      <span>
+        <span className="yellow2"> {'(?<=)'} </span>- positive look behind, that targets in this case what comes after 'THE' or 'the' words.
+      </span>
+    ),
+    example: '(?<=[tT]he)..',
+
+  },
+  {
+    title: "(?<![tT]he)..",
+    description: (
+      <span>
+        <span className="yellow2"> {'(?<=)'} </span>- negative look behind, that targets in this case what does NOT come after 'THE' or 'the' words.
+      </span>
+    ),
+    example: '(?<![tT]he)..',
+
+  },
+  {
+    title: ".(?=at)",
+    description: (
+      <span>
+        <span className="yellow2"> {'(?=)'} </span>- positive look after, that targets anything that has 'at' after it.
+      </span>
+    ),
+    example: '.(?=at)',
+  },
+  {
+    title: ".(?!at)",
+    description: (
+      <span>
+        <span className="yellow2"> {'(?=)'} </span>- negative look after, that targets anything that DOES NOT have 'at' after it.
+      </span>
+    ),
+    example: '.(?!at)',
   },
 
 ];
