@@ -22,7 +22,11 @@ const data = [
       <div>{"}"}</div></div>
       <div>&emsp;</div>
       </div>) ,
-    comment: <p>{`//A basic component like this returns an ELEMENT. Since in this case (as is usual) the return is written as JSX it is converted into a React.createElement function call that in turn returns an object. The object has 5 keys, each containing information about it as shown below. This is why we import React when dealing with JSX, to access its createElement function. `}</p>,
+    comment: <p> 
+      <span>{`//A basic component like this returns an `}</span>
+      <span className='tl'>{`ELEMENT`}</span>
+      <span>{`. Since in this case (as is usual) the return is written as JSX it is converted into a React.createElement function call that in turn returns an object. The object has 5 keys, each containing information about it as shown below. This is why we import React when dealing with JSX, to access its createElement function. `}</span>
+      </p>,
     returns:(<div>
       <div>RETURNS:</div>
       <div>{'{'}
@@ -151,6 +155,12 @@ const data = [
     form: <div>{`const a=React.useRef(null); + <div ref={a}>InnerHTML<div>`}</div> ,
     comment: <p>{`//a way to save a value to state that does not later cause rerenders upon update`}</p>,
     returns:<div>{"RETURN: object containing the value inside the '.current' key"}</div> ,
+  },
+  {
+    name: `.useMemo()`,
+    form: <div>{`useMemo(()=>{return thingToStoreInCache},[dependencyThatTriggersReevaluation])`}</div> ,
+    comment: <p>{`//Stores a vlue in cache and only reevaluates it if one of the dependencies changes upon component rerender. Does impact memory cost so best used with slow functions that would impact rerender performance greatly.`}</p>,
+    returns:<div>{"value stored in cache"}</div> ,
   },
   {
     name: `.useContext()/.createContext`,
