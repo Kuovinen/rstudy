@@ -1,0 +1,54 @@
+h4, p{padding: 0;
+margin:0;}
+h4{margin-bottom: 0.5rem;}
+.sassCard,
+.sassCardOpen {
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--whiteTr20);
+  overflow: hidden;
+}
+.sassCard > .title:hover {
+  background: rgb(148, 148, 148);
+}
+.sassCardOpen > .title {
+  background: rgb(169, 169, 169);
+}
+.sassCardOpen {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.title {
+  text-align: left;
+  font-weight: 1000;
+  padding-left: 1rem;
+  font-size: 2rem;
+  background: rgb(86, 86, 86);
+}
+.sassCard > .form,
+.sassCard > .comment,
+.sassCard > .returns,
+.sassCard > .exampleSass,
+.sassCard > .exampleReturns {
+  display: none;
+}
+.form,
+.returns {
+  color: var(--grey0);
+}
+.commentSass {
+  background: var(--grey0);
+}
+.exampleSass,
+.exampleReturns {
+  margin: 0rem;
+  background: var(--whiteTr20);
+}
+
+.form,
+.comment,
+.returns,
+.exampleSass,
+.exampleReturns {
+  text-align: left;
+  padding-left: 1rem;
+}

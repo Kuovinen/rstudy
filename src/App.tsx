@@ -7,6 +7,7 @@ import ReactComps from "./components/reactComps/ReactComps";
 import GitCommands from "./components/git/GitCommands";
 import CliCommands from "./components/cli/CliCommands";
 import RegEx from "./components/regex/Regex";
+import Sass from "./components/sass/SassCommands";
 function App() {
   const [theme, setTheme] = React.useState("sql");
   const arrayOfTopics = [
@@ -17,6 +18,7 @@ function App() {
     { name: "git", content: <GitCommands /> },
     { name: "cli", content: <CliCommands /> },
     { name: "regex", content: <RegEx /> },
+    { name: "sass", content: <Sass /> },
   ];
 
   const content = arrayOfTopics.reduce((prev, current) => {
@@ -37,6 +39,7 @@ function App() {
         <div onClick={() => setTheme("git")}>Git</div>
         <div onClick={() => setTheme("cli")}>CLI</div>
         <div onClick={() => setTheme("regex")}>RegEx</div>
+        <div onClick={() => setTheme("sass")}>Sass</div>
       </menu>{" "}
       {content}
     </div>
