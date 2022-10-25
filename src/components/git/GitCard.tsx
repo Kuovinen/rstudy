@@ -11,7 +11,7 @@ function GitCard(props: props) {
   function expand() {
     if (theTab && theTab.current) {
       theTab.current.className =
-        theTab.current.className == "gitCard" ? "gitCardOpen" : "gitCard";
+        theTab.current.className === "gitCard" ? "gitCardOpen" : "gitCard";
     }
   }
   return (

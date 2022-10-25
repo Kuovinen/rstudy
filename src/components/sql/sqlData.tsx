@@ -311,32 +311,59 @@ const arr = [
   {
     title: "\\c databaseName",
     description: <span>connect to specific database</span>,
-    example: <span><span className="yellow2">\c</span> hq</span>,
-    result: <span >Connects to hq database</span>,
+    example: (
+      <span>
+        <span className="yellow2">\c</span> hq
+      </span>
+    ),
+    result: <span>Connects to hq database</span>,
   },
   {
     title: "\\! cls     or   \\! clear ",
-    description: <span>clear terminal, cls form windows and clear for linux</span>,
-    example: <span><span className="yellow2">\\! clear</span></span>,
-    result: <span >Empty terminal</span>,
+    description: (
+      <span>clear terminal, cls form windows and clear for linux</span>
+    ),
+    example: (
+      <span>
+        <span className="yellow2">\\! clear</span>
+      </span>
+    ),
+    result: <span>Empty terminal</span>,
   },
   {
     title: "\\dt ",
     description: <span>display tables in current database</span>,
-    example: <span><span className="yellow2">\\dt</span></span>,
-    result: <span >Shows hq, scranton and stamford as a list of tables</span>,
+    example: (
+      <span>
+        <span className="yellow2">\\dt</span>
+      </span>
+    ),
+    result: <span>Shows hq, scranton and stamford as a list of tables</span>,
   },
   {
     title: "\\sudo –i –u postgres ",
     description: <span>start postgres on linux</span>,
-    example: <span><span className="yellow2">\\sudo –i –u postgres</span></span>,
-    result: <span >Start PostgreSQL server</span>,
+    example: (
+      <span>
+        <span className="yellow2">\\sudo –i –u postgres</span>
+      </span>
+    ),
+    result: <span>Start PostgreSQL server</span>,
   },
   {
     title: "\\psql ",
     description: <span>Enters the PostgreSQL Console</span>,
-    example: <span><span className="yellow2">\\psql</span></span>,
-    result: <span >After entering this console, you can instantly start working with databases by executing different queries of your choice in this console.</span>,
+    example: (
+      <span>
+        <span className="yellow2">\\psql</span>
+      </span>
+    ),
+    result: (
+      <span>
+        After entering this console, you can instantly start working with
+        databases by executing different queries of your choice in this console.
+      </span>
+    ),
   },
   {
     title: "DROP INDEX",

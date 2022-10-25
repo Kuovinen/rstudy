@@ -32,9 +32,8 @@
 }
 .comment {
   background: var(--grey0);
-  padding-top:0.1rem;
+  padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-
 }
 .example,
 .exampleReturns {
@@ -50,15 +49,15 @@
   text-align: left;
   padding-left: 1rem;
 }
-.gr{
-  color:rgb(67, 119, 67);
+.gr {
+  color: rgb(67, 119, 67);
 }
-.tl{
-  color:teal;
+.tl {
+  color: teal;
 }
-.bl{
-  color:rgb(78, 139, 180);
+.bl {
+  color: rgb(78, 139, 180);
 }
-.pr{
-  color:rgb(92, 56, 158);
+.pr {
+  color: rgb(92, 56, 158);
 }

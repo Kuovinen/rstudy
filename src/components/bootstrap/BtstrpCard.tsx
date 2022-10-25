@@ -11,7 +11,7 @@ function BtstrpCard(props: props) {
   function expand() {
     if (theTab && theTab.current) {
       theTab.current.className =
-        theTab.current.className == "btstrpCard"
+        theTab.current.className === "btstrpCard"
           ? "btstrpCardOpen"
           : "btstrpCard";
     }

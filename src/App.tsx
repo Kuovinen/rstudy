@@ -24,7 +24,7 @@ function App() {
   ];
 
   const content = arrayOfTopics.reduce((prev, current) => {
-    if (current.name == theme) {
+    if (current.name === theme) {
       return [...prev, current.content];
     }
     return prev;

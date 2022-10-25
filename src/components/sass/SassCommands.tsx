@@ -9,7 +9,13 @@ function GitCommands() {
       <img src={GitIcon} alt="sassIcon" id="sassIco" />
       <div className="sassCommandsContainer">
         {data.map((element) => {
-          return <GitCard name={element.name} comment={element.comment} example={element.example}/>;
+          return (
+            <GitCard
+              name={element.name}
+              comment={element.comment}
+              example={element.example}
+            />
+          );
         })}
       </div>
     </div>

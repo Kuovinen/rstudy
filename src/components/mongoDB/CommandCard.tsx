@@ -10,7 +10,7 @@ function CommandCard(props: props) {
   function expand() {
     if (theTab && theTab.current) {
       theTab.current.className =
-        theTab.current.className == "mongCard" ? "mongCardOpen" : "mongCard";
+        theTab.current.className === "mongCard" ? "mongCardOpen" : "mongCard";
     }
   }
   return (

@@ -33,16 +33,15 @@
 .example {
   text-align: left;
   margin: 0.5rem 0;
-
 }
-.example:before{
-  content:'/'
+.example:before {
+  content: "/";
 }
-.example:after{
-  content:'/g'
+.example:after {
+  content: "/g";
 }
-.regForm{
-  color:orange;
+.regForm {
+  color: orange;
 }
 .howTo,
 .output,
@@ -65,15 +64,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
-
 }
 .regExTitle:before {
-  content: '/';
+  content: "/";
 
   opacity: 0.2;
 }
 .regExTitle:after {
-  content: '/g';
+  content: "/g";
   opacity: 0.2;
 }
 .indicatorPstGrs {

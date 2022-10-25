@@ -3,7 +3,7 @@ import "./SassCard.css";
 interface props {
   name: string;
   comment: string;
-  example:JSX.Element;
+  example: JSX.Element;
 }
 
 function SassCard(props: props) {
