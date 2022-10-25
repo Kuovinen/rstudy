@@ -1,0 +1,59 @@
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+h4 {
+  margin-bottom: 0.5rem;
+}
+.btstrpCard,
+.btstrpCardOpen {
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--whiteTr20);
+  overflow: hidden;
+}
+.btstrpCard > .title:hover {
+  background: rgb(148, 148, 148);
+}
+.btstrpCardOpen > .title {
+  background: rgb(169, 169, 169);
+}
+.btstrpCardOpen {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.title {
+  text-align: left;
+  font-weight: 1000;
+  padding-left: 1rem;
+  font-size: 2rem;
+  background: rgb(86, 86, 86);
+}
+.btstrpCard > .form,
+.btstrpCard > .comment,
+.btstrpCard > .returns,
+.btstrpCard > .examplebtstrp,
+.btstrpCard > .Returns {
+  display: none;
+}
+.form,
+.returns {
+  color: var(--grey0);
+}
+.commentbtstrp {
+  background: var(--grey0);
+}
+.examplebtstrp,
+.Returns {
+  margin: 0rem;
+  background: var(--whiteTr20);
+}
+
+.form,
+.comment,
+.returns,
+.examplebtstrp,
+.Returns {
+  text-align: left;
+  padding-left: 1rem;
+}
