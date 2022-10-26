@@ -9,6 +9,7 @@ import GitCommands from "./components/git/GitCommands";
 import CliCommands from "./components/cli/CliCommands";
 import RegEx from "./components/regex/Regex";
 import Sass from "./components/sass/SassCommands";
+import Btstrp from "./components/bootstrap/BtstrpCommands";
 function App() {
   const [theme, setTheme] = React.useState("sql");
   const arrayOfTopics = [
@@ -21,10 +22,11 @@ function App() {
     { name: "cli", content: <CliCommands /> },
     { name: "regex", content: <RegEx /> },
     { name: "sass", content: <Sass /> },
+    { name: "btstrp", content: <Btstrp /> },
   ];
 
   const content = arrayOfTopics.reduce((prev, current) => {
-    if (current.name == theme) {
+    if (current.name === theme) {
       return [...prev, current.content];
     }
     return prev;
@@ -43,6 +45,7 @@ function App() {
         <div onClick={() => setTheme("cli")}>CLI</div>
         <div onClick={() => setTheme("regex")}>RegEx</div>
         <div onClick={() => setTheme("sass")}>Sass</div>
+        <div onClick={() => setTheme("btstrp")}>Bootstrap</div>
       </menu>{" "}
       {content}
     </div>

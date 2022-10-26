@@ -1,13 +1,12 @@
-#regExText{
-  width:50%;
+#regExText {
+  width: 50%;
   text-align: left;
-  color:var(--grey0);
-
+  color: var(--grey0);
 }
-.yl{
-  color:orange;
+.yl {
+  color: orange;
 }
-#regextextcontainer{
+#regextextcontainer {
   top: 1rem;
   position: sticky;
 }

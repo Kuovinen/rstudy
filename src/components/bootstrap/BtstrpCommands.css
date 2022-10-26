@@ -1,0 +1,24 @@
+#btstrpCommands {
+  margin-top: 3rem;
+  background: var(--backgroundblack);
+}
+#btstrpIco {
+  margin: 2rem;
+  filter: saturate(0);
+  height: 4rem;
+  display: block;
+  opacity: 0.75;
+}
+#btstrpIco:hover {
+  filter: brightness(1.1);
+}
+.btstrpCommandsContainer {
+  width: 90%;
+
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}

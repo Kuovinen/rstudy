@@ -1,6 +1,11 @@
-h4, p{padding: 0;
-margin:0;}
-h4{margin-bottom: 0.5rem;}
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+h4 {
+  margin-bottom: 0.5rem;
+}
 .sassCard,
 .sassCardOpen {
   border-radius: 0.5rem;

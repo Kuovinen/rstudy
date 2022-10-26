@@ -1,13 +1,13 @@
 import React from "react";
-import GitIcon from "../../sass.svg";
-import "./SassCommands.css";
+import BtstrpIcon from "../../bootstrap.svg";
+import "./BtstrpCommands.css";
 import data from "./data";
-import GitCard from "./SassCard";
-function GitCommands() {
+import GitCard from "./BtstrpCard";
+function BtstrpCommands() {
   return (
-    <div id="sassCommands">
-      <img src={GitIcon} alt="sassIcon" id="sassIco" />
-      <div className="sassCommandsContainer">
+    <div id="btstrpCommands">
+      <img src={BtstrpIcon} alt="btstrpIcon" id="btstrpIco" />
+      <div className="btstrpCommandsContainer">
         {data.map((element) => {
           return (
             <GitCard
@@ -21,4 +21,4 @@ function GitCommands() {
     </div>
   );
 }
-export default GitCommands;
+export default BtstrpCommands;

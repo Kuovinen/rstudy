@@ -11,7 +11,7 @@ function CliCard(props: props) {
   function expand() {
     if (theTab && theTab.current) {
       theTab.current.className =
-        theTab.current.className == "cliCard" ? "cliCardOpen" : "cliCard";
+        theTab.current.className === "cliCard" ? "cliCardOpen" : "cliCard";
     }
   }
   return (

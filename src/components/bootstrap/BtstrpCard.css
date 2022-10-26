@@ -1,42 +1,50 @@
-.funcCard,
-.funcCardOpen {
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+h4 {
+  margin-bottom: 0.5rem;
+}
+.btstrpCard,
+.btstrpCardOpen {
   border-radius: 0.5rem;
   border: 0.2rem solid var(--whiteTr20);
   overflow: hidden;
 }
-.funcCard > .title:hover {
+.btstrpCard > .title:hover {
   background: rgb(148, 148, 148);
 }
-.funcCardOpen > .title {
+.btstrpCardOpen > .title {
   background: rgb(169, 169, 169);
 }
-.funcCardOpen {
+.btstrpCardOpen {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 .title {
+  text-align: left;
   font-weight: 1000;
+  padding-left: 1rem;
   font-size: 2rem;
   background: rgb(86, 86, 86);
 }
-.funcCard > .form,
-.funcCard > .comment,
-.funcCard > .returns,
-.funcCard > .example,
-.funcCard > .exampleReturns {
+.btstrpCard > .form,
+.btstrpCard > .comment,
+.btstrpCard > .returns,
+.btstrpCard > .examplebtstrp,
+.btstrpCard > .Returns {
   display: none;
 }
 .form,
 .returns {
   color: var(--grey0);
 }
-.comment {
+.commentbtstrp {
   background: var(--grey0);
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
 }
-.example,
-.exampleReturns {
+.examplebtstrp,
+.Returns {
   margin: 0rem;
   background: var(--whiteTr20);
 }
@@ -44,20 +52,8 @@
 .form,
 .comment,
 .returns,
-.example,
-.exampleReturns {
+.examplebtstrp,
+.Returns {
   text-align: left;
   padding-left: 1rem;
-}
-.gr {
-  color: rgb(67, 119, 67);
-}
-.tl {
-  color: teal;
-}
-.bl {
-  color: rgb(78, 139, 180);
-}
-.pr {
-  color: rgb(92, 56, 158);
 }

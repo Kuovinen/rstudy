@@ -12,7 +12,7 @@ function FunctionCard(props: props) {
   function expand() {
     if (theTab && theTab.current) {
       theTab.current.className =
-        theTab.current.className == "funcCard" ? "funcCardOpen" : "funcCard";
+        theTab.current.className === "funcCard" ? "funcCardOpen" : "funcCard";
     }
   }
   return (

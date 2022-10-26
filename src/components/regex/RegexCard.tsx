@@ -4,8 +4,8 @@ interface PostgressCardProps {
   title: string;
   description: JSX.Element;
   example: string;
-  regExInput:string//React.MutableRefObject<string>;
-  setRegExInputState:React.Dispatch<React.SetStateAction<string>>
+  regExInput: string; //React.MutableRefObject<string>;
+  setRegExInputState: React.Dispatch<React.SetStateAction<string>>;
 }
 
 function PostgressCard(props: PostgressCardProps) {
@@ -19,13 +19,16 @@ function PostgressCard(props: PostgressCardProps) {
     }
   }
   return (
-    <div className="PstgrsTheme" ref={theTab} onMouseEnter={()=>props.setRegExInputState(props.example)}>
-      <div className="regExTitle" onClick={expand} >
+    <div
+      className="PstgrsTheme"
+      ref={theTab}
+      onMouseEnter={() => props.setRegExInputState(props.example)}
+    >
+      <div className="regExTitle" onClick={expand}>
         <div className="indicatorPstGrs"></div>
         <span className="cardTitlePstGrs">{props.title}</span>
       </div>
       <div className="howTo">{props.description}</div>
-      
     </div>
   );
 }
