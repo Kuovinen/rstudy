@@ -1,0 +1,57 @@
+h4, p{padding: 0;
+margin:0;}
+h4{margin-bottom: 0.5rem;}
+.htmlCard,
+.htmlCardOpen {
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--whiteTr20);
+  overflow: hidden;
+}
+.htmlCard > .title:hover {
+  background: rgb(148, 148, 148);
+}
+.htmlCardOpen > .title {
+  background: rgb(169, 169, 169);
+}
+.htmlCardOpen {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.title {
+  text-align: left;
+  font-weight: 1000;
+  padding-left: 1rem;
+  font-size: 2rem;
+  background: rgb(86, 86, 86);
+}
+.htmlCard > .form,
+.htmlCard > .comment,
+.htmlCard > .returns,
+.htmlCard > .examplehtml,
+.htmlCard > .exampleReturns {
+  display: none;
+}
+.form,
+.returns {
+  color: var(--grey0);
+}
+.commenthtml {
+  background: var(--grey0);
+}
+.examplehtml,
+.exampleReturns {
+  margin: 0rem;
+  background: var(--whiteTr20);
+}
+
+.form,
+.comment,
+.returns,
+.examplehtml,
+.exampleReturns {
+  text-align: left;
+  padding-left: 1rem;
+}
+.g{
+  opacity:0.3;
+}

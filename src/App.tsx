@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import HTML from "./components/html/HTMLCommands";
 import Postgress from "./components/sql/Postgress";
 import JSFunctions from "./components/jsfunctions/JSFunctions";
 import MongoCommands from "./components/mongoDB/MongoCommands";
@@ -11,6 +12,7 @@ import Sass from "./components/sass/SassCommands";
 function App() {
   const [theme, setTheme] = React.useState("sql");
   const arrayOfTopics = [
+    { name: "html", content: <HTML /> },
     { name: "sql", content: <Postgress /> },
     { name: "js", content: <JSFunctions /> },
     { name: "mongo", content: <MongoCommands /> },
@@ -32,6 +34,7 @@ function App() {
       <menu id="menu">
         {" "}
         <span>MENU:</span>{" "}
+        <div onClick={() => setTheme("html")}>HTML</div>
         <div onClick={() => setTheme("sql")}>PostgresSQL</div>
         <div onClick={() => setTheme("mongo")}>mongoDB</div>
         <div onClick={() => setTheme("js")}>JavaScript</div>
