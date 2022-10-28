@@ -11,7 +11,7 @@ function SassCard(props: props) {
   function expand() {
     if (theTab && theTab.current) {
       theTab.current.className =
-        theTab.current.className == "sassCard" ? "sassCardOpen" : "sassCard";
+        theTab.current.className === "sassCard" ? "sassCardOpen" : "sassCard";
     }
   }
   return (
