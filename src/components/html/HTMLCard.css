@@ -55,3 +55,11 @@ h4{margin-bottom: 0.5rem;}
 .g{
   opacity:0.3;
 }
+.inputs>*{
+  margin-right: 1rem;
+}
+.inputs :nth-child(odd){
+
+background:var(--whiteTr20);
+border-radius: 0.5rem;
+}
