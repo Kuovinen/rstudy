@@ -13,7 +13,7 @@ function PostgressCard(props: PostgressCardProps) {
   function expand() {
     if (theTab && theTab.current) {
       theTab.current.className =
-        theTab.current.className == "PstgrsTheme"
+        theTab.current.className === "PstgrsTheme"
           ? "PstgrsThemeOpen"
           : "PstgrsTheme";
     }
