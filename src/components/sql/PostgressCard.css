@@ -21,7 +21,7 @@
   margin-bottom: 3rem;
 }
 .PstgrsTheme > .howTo,
-.PstgrsTheme > .example,
+.PstgrsTheme > .sqlExample,
 .PstgrsTheme > .output {
   display: none;
 }
@@ -30,13 +30,13 @@
   background-color: var(--whiteTr10);
   text-align: left;
 }
-.example {
+.sqlExample {
   text-align: left;
   margin: 0.5rem 0;
 }
 .howTo,
 .output,
-.example {
+.sqlExample {
   padding-left: 0.5rem;
 }
 

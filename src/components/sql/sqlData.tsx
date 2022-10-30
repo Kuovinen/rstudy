@@ -15,7 +15,7 @@ const arr = [
     result: <span className="green2">RESULT</span>,
   },
   {
-    title: "--SELECT",
+    title: "SELECT",
     description: <span>extracts data from a database</span>,
     example: (
       <span>
@@ -47,7 +47,7 @@ const arr = [
     ),
   },
   {
-    title: "--JOIN",
+    title: "JOIN",
     description: (
       <span>
         query keyword to get data from multiple tables at once using their
@@ -84,7 +84,7 @@ const arr = [
     ),
   },
   {
-    title: "--CONSTRAINT",
+    title: "CONSTRAINT",
     description: <span>defines rules for data in a table</span>,
     example: (
       <span>
@@ -121,7 +121,7 @@ const arr = [
     ),
   },
   {
-    title: "--WHERE",
+    title: "WHERE",
     description: <span>sets conditions for queries</span>,
     example: (
       <span>
@@ -151,7 +151,72 @@ const arr = [
     ),
   },
   {
-    title: "--UPDATE",
+    title: "OR",
+    description: <span>Combine query conditions. One must be met.</span>,
+    example: (
+      <span>
+        <span className="yellow2">SELECT</span> *{" "}
+        <span className="yellow2">FROM</span> scranton{" "}
+        <span className="yellow2">WHERE</span> name='Michael'
+        <span className="green2"> OR</span>
+        <span className="yellow2"> WHERE</span> name='Jim';
+      </span>
+    ),
+    result: (
+      <span>
+        RESULT:{" "}
+        <div>
+          {" "}
+          <table className="tableSQL" style={{ border: "none" }}>
+            <tr>
+              <td>0001</td>
+              <td>Michael </td>
+              <td>Scott</td>
+              <td>Reg.Manager</td>
+              <td>1962</td>
+              <td>0000</td>
+              <td>Management</td>
+            </tr>
+            <tr>
+              <td>0002</td>
+              <td>Jim </td>
+              <td>Halpert</td>
+              <td>Salesman</td>
+              <td>1979</td>
+              <td>0001</td>
+              <td>Sales</td>
+            </tr>
+          </table>
+        </div>
+      </span>
+    ),
+  },
+  {
+    title: "AND",
+    description: <span>Combine query conditions. Both must be met.</span>,
+    example: (
+      <span>
+        <span className="yellow2">SELECT</span> *{" "}
+        <span className="yellow2">FROM</span> scranton{" "}
+        <span className="yellow2">WHERE</span> name='Michael'
+        <span className="green2"> AND</span>
+        <span className="yellow2"> WHERE</span> name='Jim';
+      </span>
+    ),
+    result: (
+      <span>
+        RESULT:{" "}
+        <div>
+          {" "}
+          <table className="tableSQL" style={{ border: "none" }}>
+            <span>Nothing, because there's only 1 name</span>
+          </table>
+        </div>
+      </span>
+    ),
+  },
+  {
+    title: "UPDATE",
     description: <span>updates data in a database</span>,
     example: (
       <span>
@@ -180,7 +245,7 @@ const arr = [
     ),
   },
   {
-    title: "--DELETE",
+    title: "DELETE",
     description: <span>deletes data from a database</span>,
     example: (
       <span>
@@ -191,7 +256,7 @@ const arr = [
     result: <span>RESULT: Jim quits the scranton branch</span>,
   },
   {
-    title: "--INSERT INTO",
+    title: "INSERT INTO",
     description: <span>inserts new data into a database</span>,
     example: (
       <span>
@@ -238,7 +303,7 @@ const arr = [
     result: <span className="green">RESULT</span>,
   },
   {
-    title: "--CREATE TABLE",
+    title: "CREATE TABLE",
     description: (
       <span>
         Creates a new table. In the example below the new table is called
@@ -261,7 +326,7 @@ const arr = [
         <span className="yellow2">INT</span>);
         <span className="green1">
           {
-            '--VARCHAR = TEXT has a constraint of 255 character length. SERIAL=INT that automatically adds 1 to current id as new entities are made. PRIMARY = unique NB! If the value name needs to be an SQL keyword, wrap it in double quotes (not single!). Profile=> "user" <-otherwise user would have been picked up as a keyword. Names should be singular, not plural form. '
+            'VARCHAR = TEXT has a constraint of 255 character length. SERIAL=INT that automatically adds 1 to current id as new entities are made. PRIMARY = unique NB! If the value name needs to be an SQL keyword, wrap it in double quotes (not single!). Profile=> "user" <-otherwise user would have been picked up as a keyword. Names should be singular, not plural form. '
           }
         </span>
       </span>
@@ -289,7 +354,7 @@ const arr = [
     result: <span className="green">RESULT</span>,
   },
   {
-    title: "--DROP TABLE",
+    title: "DROP TABLE",
     description: <span>deletes a table</span>,
     example: (
       <span>
@@ -299,11 +364,11 @@ const arr = [
     result: <span>RESULT: scranton table is gone</span>,
   },
   {
-    title: "--\\l",
+    title: "\\l",
     description: <span>list all</span>,
     example: (
       <span>
-        <span className="yellow2">\l</span> ;
+        <span className="yellow2">\l</span>
       </span>
     ),
     result: <span>RESULT: displays all databases</span>,
@@ -335,7 +400,7 @@ const arr = [
     description: <span>display tables in current database</span>,
     example: (
       <span>
-        <span className="yellow2">\\dt</span>
+        <span className="yellow2">\dt</span>
       </span>
     ),
     result: <span>Shows hq, scranton and stamford as a list of tables</span>,
@@ -355,7 +420,7 @@ const arr = [
     description: <span>Enters the PostgreSQL Console</span>,
     example: (
       <span>
-        <span className="yellow2">\\psql</span>
+        <span className="yellow2">\psql</span>
       </span>
     ),
     result: (

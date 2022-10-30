@@ -20,11 +20,10 @@ function PostgressCard(props: PostgressCardProps) {
   return (
     <div className="PstgrsTheme" ref={theTab}>
       <div className="PstGrsTitle" onClick={expand}>
-        <div className="indicatorPstGrs"></div>
         <span className="cardTitlePstGrs">{props.title}</span>
       </div>
       <div className="howTo">{props.description}</div>
-      <div className="example">{props.example}</div>
+      <div className="sqlExample">{props.example}</div>
       <div className="output">{props.result}</div>
     </div>
   );
