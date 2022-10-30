@@ -103,6 +103,17 @@ let data = [
 
     vis: `//indexOf() returns 1 and lastIndexOf() returns 5`,
   },
+  {
+    name: `.sort()`,
+    form: `Array.sort((a,b)=>//sorter formula)`,
+    comment: `//Sorts the array, by default in ascending order, converting elements into strings and comparing tehir UTF-16 code values.If a sorting function is given, its return value is checked. If the value is bigger than 0, a is place after b, if the return value is less than 0, a is placed before b, if 0, no change.`,
+    returns:
+      "RETURN: a reference to the same array as was input but now sorted. ",
+    example_f: "EXAMPLE:",
+    example: `[2,3,1,4].sort((a,b)=>{return a-b});`,
+
+    vis: `// returns [1,2,3,4] <- modifies the original to this.`,
+  },
 
   {
     name: `.trim()`,
