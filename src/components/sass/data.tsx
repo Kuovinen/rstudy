@@ -109,6 +109,8 @@ let data = [
         <p>{"div{background:green}"}</p>
         <h4>fileTwo.scss</h4>
         <p>{'@import "./fileOne.scss"'}</p>
+        or
+        <p>{'@use "fileOne"'}</p>
         <p>{"span{@extend div}"}</p>
       </div>
     ),
@@ -120,6 +122,25 @@ let data = [
       <div>
         <span className="green2"> {"div"}</span>
         <span>{"{ width : 100%-20%; }"}</span>
+      </div>
+    ),
+  },
+  {
+    name: `Inheritance`,
+    comment: `//Define once, use multiple times. The % sign allows us to establish reusable blocks.`,
+    example: (
+      <div>
+        <span className="yellow2"> {"%dataBlockName"}</span>
+        <span>{"{ color:red;background:grey; }"}</span> <br />
+        <span>{".className1{"}</span>
+        <span className="green2"> {"@extend "}</span>
+        <span className="yellow2">{"%dataBlockName"}</span>
+        <span>{"}"}</span>
+        <br />
+        <span>{".className2{"}</span>
+        <span className="green2"> {"@extend "}</span>
+        <span className="yellow2">{"%dataBlockName"}</span>
+        <span>{"}"}</span>
       </div>
     ),
   },
