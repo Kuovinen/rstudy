@@ -9,6 +9,7 @@ import GitCommands from "./components/git/GitCommands";
 import CliCommands from "./components/cli/CliCommands";
 import RegEx from "./components/regex/Regex";
 import Sass from "./components/sass/SassCommands";
+import TSConcepts from "./components/typeScript/TSConcepts";
 import Btstrp from "./components/bootstrap/BtstrpCommands";
 function App() {
   const [theme, setTheme] = React.useState("sql");
@@ -16,6 +17,7 @@ function App() {
     { name: "html", content: <HTML /> },
     { name: "sql", content: <Postgress /> },
     { name: "js", content: <JSFunctions /> },
+    { name: "ts", content: <TSConcepts /> },
     { name: "mongo", content: <MongoCommands /> },
     { name: "react", content: <ReactComps /> },
     { name: "git", content: <GitCommands /> },
@@ -35,11 +37,11 @@ function App() {
     <div className="App">
       <menu id="menu">
         {" "}
-        <span>MENU:</span>{" "}
-        <div onClick={() => setTheme("html")}>HTML</div>
+        <span>MENU:</span> <div onClick={() => setTheme("html")}>HTML</div>
         <div onClick={() => setTheme("sql")}>PostgresSQL</div>
         <div onClick={() => setTheme("mongo")}>mongoDB</div>
         <div onClick={() => setTheme("js")}>JavaScript</div>
+        <div onClick={() => setTheme("ts")}>TypeScript</div>
         <div onClick={() => setTheme("react")}>React</div>
         <div onClick={() => setTheme("git")}>Git</div>
         <div onClick={() => setTheme("cli")}>CLI</div>
