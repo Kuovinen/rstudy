@@ -31,6 +31,26 @@ let data = [
       </div>
     ),
   },
+  {
+    name: `Function typing`,
+    comment: `//provide a type. A function should have types for both it's paremeters and it's return value:`,
+    example: (
+      <div>
+        <div>
+          {"function fName(x:"}
+          <span className="yellow2">number</span>, y:
+          <span className="yellow2">number</span>
+          {") : "}
+          <span className="yellow2">number</span>
+          <span>{"{"}</span>
+          <br />
+          <span>return x+y;</span>
+          <br />
+          <span>{"}"}</span>
+        </div>
+      </div>
+    ),
+  },
 ];
 
 export default data;
