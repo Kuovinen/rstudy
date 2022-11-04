@@ -51,6 +51,21 @@ let data = [
       </div>
     ),
   },
+  {
+    name: `Aliases`,
+    comment: `//An alias can substitute any type, even basic ones.`,
+    example: (
+      <div>
+        <div>
+          <span className="yellow2">type</span> myTypeName =
+          <span className="green2"> string</span>;
+          <br />
+          <span>let text : </span>
+          <span className="green2"> myTypeName</span>;
+        </div>
+      </div>
+    ),
+  },
 ];
 
 export default data;
