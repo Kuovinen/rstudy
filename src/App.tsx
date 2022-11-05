@@ -11,6 +11,7 @@ import RegEx from "./components/regex/Regex";
 import Sass from "./components/sass/SassCommands";
 import TSConcepts from "./components/typeScript/TSConcepts";
 import Btstrp from "./components/bootstrap/BtstrpCommands";
+import GqlCommands from "./components/graphQL/GqlCommands";
 function App() {
   const [theme, setTheme] = React.useState("sql");
   const arrayOfTopics = [
@@ -25,6 +26,7 @@ function App() {
     { name: "regex", content: <RegEx /> },
     { name: "sass", content: <Sass /> },
     { name: "btstrp", content: <Btstrp /> },
+    { name: "gql", content: <GqlCommands /> },
   ];
 
   const content = arrayOfTopics.reduce((prev, current) => {
@@ -48,6 +50,7 @@ function App() {
         <div onClick={() => setTheme("regex")}>RegEx</div>
         <div onClick={() => setTheme("sass")}>Sass</div>
         <div onClick={() => setTheme("btstrp")}>Bootstrap</div>
+        <div onClick={() => setTheme("gql")}>GraphQL</div>
       </menu>{" "}
       {content}
     </div>
