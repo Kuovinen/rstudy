@@ -1,0 +1,24 @@
+#qstCommands {
+  margin-top: 3rem;
+  background: var(--backgroundblack);
+}
+#qstIco {
+  margin: 2rem;
+  filter: saturate(0);
+  height: 4rem;
+  display: block;
+  opacity: 0.75;
+}
+#qstIco:hover {
+  filter: brightness(1.1);
+}
+.qstCommandsContainer {
+  width: 90%;
+
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}

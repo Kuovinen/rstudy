@@ -12,6 +12,7 @@ import Sass from "./components/sass/SassCommands";
 import TSConcepts from "./components/typeScript/TSConcepts";
 import Btstrp from "./components/bootstrap/BtstrpCommands";
 import GqlCommands from "./components/graphQL/GqlCommands";
+import QstCommands from "./components/questions/QstCommands";
 function App() {
   const [theme, setTheme] = React.useState("sql");
   const arrayOfTopics = [
@@ -27,6 +28,7 @@ function App() {
     { name: "sass", content: <Sass /> },
     { name: "btstrp", content: <Btstrp /> },
     { name: "gql", content: <GqlCommands /> },
+    { name: "qst", content: <QstCommands /> },
   ];
 
   const content = arrayOfTopics.reduce((prev, current) => {
@@ -51,6 +53,7 @@ function App() {
         <div onClick={() => setTheme("sass")}>Sass</div>
         <div onClick={() => setTheme("btstrp")}>Bootstrap</div>
         <div onClick={() => setTheme("gql")}>GraphQL</div>
+        <div onClick={() => setTheme("qst")}>Theory</div>
       </menu>{" "}
       {content}
     </div>
