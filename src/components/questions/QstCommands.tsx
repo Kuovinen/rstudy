@@ -9,7 +9,13 @@ function CliCommands() {
       <img src={CliIcon} alt="qstIcon" id="qstIco" />
       <div className="qstCommandsContainer">
         {data.map((element) => {
-          return <CliCard name={element.name} comment={element.comment} />;
+          return (
+            <CliCard
+              name={element.name}
+              comment={element.comment}
+              example={element.example}
+            />
+          );
         })}
       </div>
     </div>
