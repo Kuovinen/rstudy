@@ -341,6 +341,22 @@ let data = [
       </div>
     ),
   },
+  {
+    name: `Display`,
+    comment: `//Display properties use the D key letter. d-none would dipslay:none the elment, while d-md-block would display it as a block on a middle sized screen.`,
+    example: (
+      <div>
+        <div className="row d-none d-md-block">
+          this element hides on any screen below mid size (row d-none
+          d-md-block)
+        </div>
+        <div className="row d-block">
+          change the sreen size to midium or larger to see another element above
+          this one (this element is : row d-block)
+        </div>
+      </div>
+    ),
+  },
 ];
 //https://mdbootstrap.com/docs/standard/content-styles/colors/
 export default data;
