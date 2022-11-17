@@ -51,6 +51,10 @@ let data = [
     name: `man + help`,
     comment: `//Manual and help.`,
   },
+  {
+    name: `cls`,
+    comment: `//Clear console on windows.`,
+  },
 ];
 
 export default data;

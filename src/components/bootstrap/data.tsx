@@ -352,7 +352,7 @@ let data = [
         </div>
         <div className="row d-block">
           change the sreen size to midium or larger to see another element above
-          this one (this element is : row d-block)
+          this one (this element is : row d-blocky)
         </div>
       </div>
     ),
