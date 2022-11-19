@@ -364,6 +364,24 @@ const arr = [
     result: <span>RESULT: scranton table is gone</span>,
   },
   {
+    title: "ALTER SEQUENCE X_Y_seq RESTART WITH 1;",
+    description: (
+      <span>
+        Resets the primary serial key named 'sequntialKeyName' in table name
+        'tableName' to make it start with 1.{" "}
+      </span>
+    ),
+    example: (
+      <span>
+        ALTER SEQUENCE <span className="yellow2">X</span>_
+        <span className="yellow2">Y</span>_seq RESTART WITH 1;
+      </span>
+    ),
+    result: (
+      <span>RESULT: table named X has it's Y column sequence reset to 1</span>
+    ),
+  },
+  {
     title: "\\l",
     description: <span>list all</span>,
     example: (
