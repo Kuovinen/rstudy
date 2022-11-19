@@ -374,6 +374,21 @@ const arr = [
     result: <span>RESULT: displays all databases</span>,
   },
   {
+    title: "\\conninfo",
+    description: <span>Outputs information about the connection</span>,
+    example: (
+      <span>
+        <span className="yellow2">\conninfo</span>
+      </span>
+    ),
+    result: (
+      <span>
+        RESULT: You are connected to database "postgres" as user "me" on host
+        "localhost" (address "::1") at port "5432".
+      </span>
+    ),
+  },
+  {
     title: "\\c databaseName",
     description: <span>connect to specific database</span>,
     example: (
