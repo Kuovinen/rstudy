@@ -1,52 +1,50 @@
-.gqlCard,
-.gqlCardOpen {
+.cliCard,
+.cliCardOpen {
   border-radius: 0.5rem;
   border: 0.2rem solid var(--whiteTr20);
   overflow: hidden;
 }
-.gqlCard > .gqlTitle:hover {
+.cliCard > .title:hover {
   background: rgb(148, 148, 148);
 }
-.gqlCardOpen > .gqlTitle {
+.cliCardOpen > .title {
   background: rgb(169, 169, 169);
 }
-.gqlCardOpen {
+.cliCardOpen {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.gqlTitle {
+.title {
   text-align: left;
   font-weight: 1000;
   font-size: 2rem;
   background: rgb(86, 86, 86);
 }
-.gqlCard > .form,
-.gqlCard > .gqlComment,
-.gqlCard > .gqlReturn {
+.cliCard > .form,
+.cliCard > .comment,
+.cliCard > .returns,
+.cliCard > .example,
+.cliCard > .exampleReturns {
   display: none;
 }
-
-.gqlReturn {
+.form,
+.returns {
   color: var(--grey0);
 }
-.gqlComment {
+.comment {
   background: var(--grey0);
 }
-.gqlEexample,
-.gqleExampleReturn {
+.example,
+.exampleReturns {
   margin: 0rem;
   background: var(--whiteTr20);
 }
 
-.gqlComment,
-.gqlReturn {
+.form,
+.comment,
+.returns,
+.example,
+.exampleReturns {
   text-align: left;
   padding-left: 1rem;
-}
-.g {
-  color: opacity(0.7);
-}
-.green2,
-.yellow2 {
-  font-weight: 1000;
 }

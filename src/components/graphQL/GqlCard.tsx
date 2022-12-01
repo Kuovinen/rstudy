@@ -2,8 +2,8 @@ import React from "react";
 import "./GqlCard.css";
 interface props {
   name: string;
-
   comment: string;
+  return: JSX.Element;
 }
 
 function GqlCard(props: props) {
@@ -16,11 +16,12 @@ function GqlCard(props: props) {
   }
   return (
     <div className="gqlCard" ref={theTab}>
-      <div className="title" onClick={expand}>
+      <div className="gqlTitle" onClick={expand}>
         {props.name}
       </div>
 
-      <div className="comment">{props.comment}</div>
+      <div className="gqlComment">{props.comment}</div>
+      <div className="gqlReturn">{props.return}</div>
     </div>
   );
 }

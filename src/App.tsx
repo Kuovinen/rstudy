@@ -14,6 +14,7 @@ import Btstrp from "./components/bootstrap/BtstrpCommands";
 import GqlCommands from "./components/graphQL/GqlCommands";
 import QstCommands from "./components/questions/QstCommands";
 import TlwCommands from "./components/tailwind/TlwCommands";
+import TH from "./components/theory/TH";
 function App() {
   const [theme, setTheme] = React.useState("sql");
   const arrayOfTopics = [
@@ -31,6 +32,7 @@ function App() {
     { name: "gql", content: <GqlCommands /> },
     { name: "qst", content: <QstCommands /> },
     { name: "tlw", content: <TlwCommands /> },
+    { name: "th", content: <TH /> },
   ];
 
   const content = arrayOfTopics.reduce((prev, current) => {
@@ -49,6 +51,7 @@ function App() {
         <div onClick={() => setTheme("js")}>JavaScript</div>
         <div onClick={() => setTheme("ts")}>TypeScript</div>
         <div onClick={() => setTheme("react")}>React</div>
+        <div onClick={() => setTheme("th")}>ReactTh</div>
         <div onClick={() => setTheme("git")}>Git</div>
         <div onClick={() => setTheme("cli")}>CLI</div>
         <div onClick={() => setTheme("regex")}>RegEx</div>

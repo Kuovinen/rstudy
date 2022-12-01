@@ -127,7 +127,76 @@ let data = [
     example: `' hello '.trim();`,
     vis: `//returns 'hello'`,
   },
+  {
+    name: `.startsWith(), .uncludes(), .endsWith()`,
 
+    form: `String.startsWith('string'),String.uncludes('string'),String.endsWith('string')`,
+    comment: `//Checks to see if the string stars, includes or ends with provided string.`,
+    returns: "RETURN: True or False",
+    example_f: "EXAMPLE:",
+    example: `'hello'.startsWith('h');`,
+    vis: `//returns true`,
+  },
+  {
+    name: `.indexOf()`,
+
+    form: `String.indexOf('string')`,
+    comment: `//Check the position at witch the provided string is located at withing the string that's being inspected. If provided with a number argument as a second parameter, it checks the index of the string, that's must be higher than that parameter.`,
+    returns: "RETURN: position index (starts with 0)",
+    example_f: "EXAMPLE:",
+    example: `'hello honnie'.startsWith('h',2);`,
+    vis: `//returns 6`,
+  },
+  {
+    name: `.match()`,
+
+    form: `String.match(/[A-Z]/g)`,
+    comment: `//Retrieves the result of a matching string against a regular expression.`,
+    returns: "RETURN: An array of matching string elements.",
+    example_f: "EXAMPLE: Array of strings",
+    example: `'Hello Honnie'.match(/[A-Z]/g);`,
+    vis: `//returns ['H','H']`,
+  },
+  {
+    name: `.repeat()`,
+
+    form: `String.repeat(3)`,
+    comment: `//Make a new string that's a copy of the one being worked over but multiplied and concatenated 'argument' nubmer of times.`,
+    returns: "RETURN: New string",
+    example_f: "EXAMPLE:",
+    example: `'Hello'.repeat(3);`,
+    vis: `//returns HelloHelloHello`,
+  },
+  {
+    name: `.replace()`,
+
+    form: `String.replace(string1,string2)`,
+    comment: `//Make a NEW string where every instance of string1 is replaced with string2.`,
+    returns: "RETURN: New string",
+    example_f: "EXAMPLE:",
+    example: `'Hello dog'.repeat('dog', 'cat');`,
+    vis: `//returns Hello cat`,
+  },
+  {
+    name: `.split()`,
+
+    form: `String.split("_")`,
+    comment: `//Make an array of strings from the original by cutting out the provided argument string section.`,
+    returns: "RETURN:Array of strings.",
+    example_f: "EXAMPLE:",
+    example: `'Hello_dog'.repeat('_');`,
+    vis: `//returns ['Hello', 'dog']`,
+  },
+  {
+    name: `.toLowerCase(),.toUpperCase()`,
+
+    form: `String.toLowerCase() or String.toLowerCase()`,
+    comment: `//Makes a new string converted to either lower or upper case.`,
+    returns: "RETURN: New string",
+    example_f: "EXAMPLE:",
+    example: `'Hello_dog'.toUpperCase('_');`,
+    vis: `//returns ['HELLO_DOG']`,
+  },
   {
     name: `setTimeout()`,
     form: `setTimeout(()=>//dostuff,time)`,
@@ -154,6 +223,15 @@ let data = [
     example_f: "EXAMPLE:",
     example: `' clearInterval(intervalName);`,
     vis: `//Stops intervalName from running further'`,
+  },
+  {
+    name: `KeyWords`,
+    form: `do not use for variable names`,
+    comment: `await break case catch class const continue debugger default delete do enum export extends false finally for function if implements import in instanceof interface new null package private protected public return super switch this throw true try typeof var void while with yield let`,
+    returns: "-",
+    example_f: "",
+    example: ``,
+    vis: ``,
   },
 ];
 
