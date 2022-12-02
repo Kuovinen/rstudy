@@ -48,3 +48,10 @@
   text-align: left;
   padding-left: 1rem;
 }
+.g {
+  opacity: 0.5;
+}
+.b {
+  color: rgb(0, 66, 113);
+  opacity: 0.5;
+}

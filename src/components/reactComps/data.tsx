@@ -275,7 +275,7 @@ const data = [
       <div>{`React.useEffect(()=>//main function,()=>//cleanerfunction,[dependancy]);`}</div>
     ),
     comment: (
-      <p>{`//run main function each time the sate of a dependancy changes and run cleaner function after. Internally when useState is called the call is forwarded to "__currentDispatcher".   useState(initialState){return React.__currentDispatcher.useState(initialState)}`}</p>
+      <p>{`//run main function each time the sate of a dependancy changes and run cleaner function after. If the dependency array is empty, it runs only once on first pain, if it's missing, it runs when component mounts and on every rerender. Internally when useState is called the call is forwarded to "__currentDispatcher".   useState(initialState){return React.__currentDispatcher.useState(initialState)}`}</p>
     ),
     returns: <div>{"RETURN: EXAMINE THIS CLOSELY!!"}</div>,
   },

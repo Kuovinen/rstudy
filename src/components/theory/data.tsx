@@ -89,6 +89,129 @@ let data = [
     comment: <span></span>,
   },
   {
+    name: `React component lifecycle.`,
+    comment: (
+      <ul>
+        <li>
+          <h4>MOUNTING</h4>
+          <ol>
+            <li>
+              <b>constructor(props)</b> <br />
+              <span className="g">
+                Used for initializing the state of the component and binding
+                event-handler methods within the component.
+              </span>
+            </li>
+            <li>
+              <b>getDerivedStateFromProps(props, state)</b>
+              <br />
+              <span className="g">
+                Used to modify the state value with any props value.
+              </span>
+            </li>
+            <li>
+              <b>render()</b>
+              <span className="g">
+                <br />
+                The render method is the only required method for a class-based
+                React component, that actually renders or inserts the HTML to
+                the DOM.(returns JSX)
+              </span>
+            </li>
+            <li>
+              <b>componentDidMount()</b>
+              <span className="b">
+                {"  "}
+                <b>useEffect</b> happens here, but after first pain, that
+                comDidMount doesn't wait for.
+              </span>
+              <br />
+              <span className="g">
+                Used to add side effects like sending network requests or
+                updating the component's state. Also allows you to make
+                subscriptions like subscribing to the Redux store.
+              </span>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <h4>UPDATING</h4>
+          <ol>
+            <li>
+              <b>getDerivedStateFromProps(props, state)</b>
+              <br />
+              <span className="g">
+                Used to modify the state value with any props value.
+              </span>
+            </li>
+            <li>
+              <b>shouldComponentUpdate()</b>
+              <span className="g">
+                <br />
+                tell React when you don't need to re-render when a new state or
+                props comes in
+              </span>
+            </li>
+            <li>
+              <b>render()</b>
+              <span className="g">
+                <br />
+                The render method is the only required method for a class-based
+                React component, that actually renders or inserts the HTML to
+                the DOM.(returns JSX)
+              </span>
+            </li>
+            <li>
+              <b>getSnapshotBeforeUpdate()</b>
+              <span className="g">
+                <br />
+                Used to give access to the previous props and state of the
+                component before it's updated.A good use case for this method is
+                handling scroll positions in a chat app.When a new message comes
+                in as the user is viewing old messages, it shouldn’t push the
+                old ones out of view. If the getSnapshotBeforeUpdate method
+                returns anything, it will be passed as a parameter for the
+                componentDidUpdate method.
+              </span>
+            </li>
+            <li>
+              <b>componentDidUpdate()</b>{" "}
+              <span className="b">
+                {"  "}
+                <b>useEffect</b> with dependencies runs it's effect here{" "}
+              </span>
+              <span className="g">
+                <br />
+                Allows us to create side effects like sending network requests
+                or calling the this.setState method, but with an escape way to
+                prevent infinite loops.
+              </span>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <h4>UNMOUNTING</h4>
+          <ol>
+            <li>
+              <b>componentWillUnmount()</b>
+              <span className="b">
+                {"  "}
+                <b>useEffect</b> clean-up function happens here{" "}
+              </span>
+              <br />
+              <span className="g">
+                Meant for any necessary clean up of the component, like
+                unsubscribing to any subscriptions (i.e., Redux) or canceling
+                any network requests. Once this method is done executing, the
+                component will be destroyed.
+              </span>
+            </li>
+          </ol>
+        </li>
+      </ul>
+    ),
+  },
+  {
     name: `How do lists work in React.`,
     comment: <span></span>,
   },
