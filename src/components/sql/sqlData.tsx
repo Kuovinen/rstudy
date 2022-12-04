@@ -297,6 +297,21 @@ const arr = [
     result: <span className="green">RESULT</span>,
   },
   {
+    title: "GROUP BY value",
+    description: (
+      <span>
+        merges the return values of a query if they have the same values
+      </span>
+    ),
+    example: <span>SELECT * FROM table GROUP BY amount;</span>,
+    result: (
+      <span className="green">
+        RESULT: would return all entities and merge all those that have the same
+        amounts into a singular one.
+      </span>
+    ),
+  },
+  {
     title: "ALTER DATABASE",
     description: <span>modifies a database</span>,
     example: <span>data</span>,
