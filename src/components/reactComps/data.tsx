@@ -299,7 +299,7 @@ const data = [
       <div>{`useMemo(()=>{return thingToStoreInCache},[dependencyThatTriggersReevaluation])`}</div>
     ),
     comment: (
-      <p>{`//Stores a vlue in cache and only reevaluates it if one of the dependencies changes upon component rerender. Does impact memory cost so best used with slow functions that would impact rerender performance greatly.`}</p>
+      <p>{`//Stores a value in cache and only reevaluates it if one of the dependencies changes upon component rerender. Does impact memory cost so best used with slow functions that would impact rerender performance greatly. Can store entire components and have their state props as the dependencies to prevent rerenders upon parent component rerender!`}</p>
     ),
     returns: <div>{"value stored in cache"}</div>,
   },
